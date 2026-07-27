@@ -76,8 +76,7 @@
                         if (existingimg) existingimg.remove();
                         const img = document.createElement('img');
                         img.src = e.target.result;
-                        img.className =
-                            'w-full h-full object-cover object-center rounded-full border-4 shadow-md'
+                        img.className = "preview-image";
                         uploadLabel.appendChild(img);
                     };
                     reader.readAsDataURL(file)
