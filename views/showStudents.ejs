@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/showStudents.css">
+</head>
+<body>
+        <!-- Navbar -->
+    <%- include("Partials/header")%>
+     <h1>All Students</h1>
+        <!-- Main Section -->
+      <div class="container">
+         
+
+         <div class="grid-container">
+            <% users.forEach((user)=>{ %>
+            <div class="card">
+                <img 
+                    src="/uploads/<%= user._id %>.<%= user.image.split('.').pop()%>" alt=""
+                    class="student-img"
+                    alt="Student img"
+                    >
+                <div class="card-content">
+                    <h2><%= user.name %></h2>
+                    <p>Course: <%= user.course %></p>
+                </div>
+                <div class="btn-group">
+                  <form action="/edit" method="post">
+                    <input type="text" name="id" class="input" value="<%= user._id %>">
+                    <button class="edit-btn">Edit</button>
+                  </form>
+                  <form action="/delete" method="post">
+                    <input type="text" name="id" class="input" value="<%= user._id %>">
+                    <button class="delete-btn" type="submit">Delete</button>
+                  </form>
+                </div>
+            </div>
+            <% }) %>
+         </div>
+      </div>
+</body>
+</html>

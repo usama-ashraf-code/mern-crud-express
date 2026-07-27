@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 90px;
+    max-width: 1400px;
+    background: linear-gradient(to right, #2b3440 , #1f2933);
+    
+}
+
+nav h2 {
+    text-align: center;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 700;
+    margin-top: 7px;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    gap: 10px;
+    padding: 8px 10px;
+}
+
+a {  
+    border: none;
+    outline: none;
+    padding: 4px 10px;
+    color: white;
+    text-decoration:none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
