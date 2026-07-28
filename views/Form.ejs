@@ -68,6 +68,7 @@
         const uploadLabel = fileInput.parentElement;
         const uploadIcon = uploadLabel.querySelector('.upload-icon');
         const uploadText = uploadLabel.querySelector('.upload-text');
+        
         fileInput.addEventListener('change' , (event)=>{
           const file = event.target.files[0];
           if(file) {

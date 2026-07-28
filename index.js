@@ -166,11 +166,14 @@ app.post("/update-student" ,  (req,res)=>{
          if(copyerr){
             console.log(copyerr);
          }
+         if(oldUserImageExtension !== newUserImageExtension){
          fs.unlink( oldUserImagePath , (unlinkErr)=>{
            if(unlinkErr){
               console.log(unlinkErr);
           }
-           })
+           });
+        }
+        
 
          const data = { name , email , course , image:newUserImageName};
          
