@@ -1,0 +1,371 @@
+/* --- Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Body --- */
+body {
+  font-family: "Poppins", sans-serif;
+  /* background: linear-gradient(145deg, rgba(255, 5, 255, 0.15), #0e1117 45%, #1c1f26 95%); */
+   display: flex; 
+  background: linear-gradient(145deg, #0e1117, #1c1f26);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+/* --- Form Container --- */
+.container {
+
+  background: linear-gradient(to top right, #c0c0c0, #a9a9a9, #808080);
+  backdrop-filter: blur(10px);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* --- Animation --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Heading --- */
+h1 {
+  text-align: center;
+  color: rgb(2, 155, 2);
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* --- Form Groups --- */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #222;
+  font-size: 14px;
+}
+
+/* --- Input Fields --- */
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #238636;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Image Upload --- */
+.image-group {
+  text-align: center;
+}
+
+.image-preview {
+  width: 90px;
+  height: 90px;
+  margin: 10px auto;
+  border-radius: 50%;
+  border: 2px dashed black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.image-preview:hover {
+  background-color: #f8f8f8;
+}
+
+.image-preview span {
+  color: #555;
+  font-size: 12px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+/* --- Button (Smaller + Clear) --- */
+button {
+  background: green;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+  background-color: #202220;
+  box-shadow: 0 0 6px rgba(35, 134, 54, 0.4);
+}
+
+button:active {
+  background-color: #2ea043;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+              inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Reset ---
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- Body --- */
+/* body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0b1d2a, #1c3b52); /* ✅ Fixed */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  
+} */
+
+/* --- Form Container --- */
+/* .container {
+  background-color:white;
+  backdrop-filter:blur(10px);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* thoda strong shadow */
+  /* width: 340px;
+}  */
+
+/* --- Heading --- */
+/* h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+} */
+
+/* --- Form Fields --- */
+/* .form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px; /* border hata ke spacing sahi kar di */
+  /* color: #222;
+  background-color: blue;
+}  */
+
+/* input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  
+} */
+
+/* Focus effect for input */
+/* input:focus {
+  border-color: #238636;
+  box-shadow: 1px 3px 7px rgba(0,0, 0, 0.6);
+
+} */
+
+/* --- Button --- */
+/* button {
+  width: 100%;
+  background-color: #238636;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 7s ease, box-shadow 0.8s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0b1d2a, #1c3b52);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container{
+     height: 427px;
+     width: 100%;
+     background-color: gray;
+     display: flex;
+     justify-content: space-evenly;
+     flex-direction:column ;
+     align-items: center;
+     /* border: 2px solid darkgreen; */
+   
+
+   
+/* .box1{
+    height: 35px;
+    width: 300px;
+    border: 2px solid orange;
+    /* background-color: ; */
+    
+
+/* .box2{
+    height: 30px;
+    width: 300px;
+    border: 2px solid blue;
+
+} */
+/* .box3{
+    height: 30px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid green;
+}
+.box4{
+    height: 30px;
+    width: 300px;
+    margin-left: 10px;
+    border: 2px solid red;
+}  */
