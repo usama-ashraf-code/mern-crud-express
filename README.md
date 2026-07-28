@@ -28,7 +28,7 @@ A full-stack CRUD application built with **Node.js**, **Express.js**, **MongoDB*
 ```
 express-mongodb/
 │── views/
-│── uploads/
+│── public/
 │── server.js
 │── package.json
 ```
